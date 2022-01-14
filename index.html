@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Controle de Gastos</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+
+    <!-- CORPO DA PÁGINA -->
+    <body>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main>
+
+            <!-- SEÇÃO DE INSERÇÃO DE INFORMAÇÕES -->
+            <section class="secaoInsercaoInformacoes">
+                <h1>Controle de Gastos</h1>
+                <p class="tresPontos">...</p>
+
+                <div class="formularioEntradaOrcamento">
+                    <h2>Total Orçamento</h2>
+                    <input type="text">
+
+                    <button>Calcular</button>
+                </div>
+
+                <div class="formularioEntradaDespesa">
+                    <h2>Nome Despesa</h2>
+                    <input type="text" class="formularioEntradaDespesa__nome">
+
+                    <h2>Valor Despesa</h2>
+                    <input type="number" class="formularioEntradaDespesa__valor">
+
+                    <button>Adicionar Despesa</button>
+                </div>
+
+                <div class="containerDespesas">
+                    <div class="containerDespesas__cabecalho">
+                        <p class="tituloDespesa">Título Despesa</p>
+                        <p>Valor Despesa</p>
+                    </div>
+
+                    <ul class="containerDespesas__lista">
+                        <!-- EXEMPLO:
+                        <li>
+                            <h3>Hotel</h3>
+                            <p>R$ 99</p>
+                            <img src="./assets/img/trash.svg" alt="Icone Lixeira">
+                        </li>
+                        -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SEÇÃO DE IMPRESSÃO DE RESULTADOS -->
+            <section class="secaoImpressaoResultados">
+                <div class="secaoImpressaoResultados__orcamento">
+                    <h3>Orçamento</h3>
+                    <p>+ R$ 0</p>
+                </div>
+
+                <div class="secaoImpressaoResultados__despesas">
+                    <h3>Despesas</h3>
+                    <p>- R$ 0</p>
+                </div>
+
+                <div class="secaoImpressaoResultados__saldo">
+                    <h3>Saldo</h3>
+                    <p>R$ 0</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </body>
+
+    <script src="./assets/js/script.js"></script>
+    
+</html>
